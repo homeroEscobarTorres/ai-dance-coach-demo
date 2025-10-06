@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dance Coach - Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🕺 AI Dance Coach</h1>
+            <p>Impara la bachata e salsa con l'intelligenza artificiale</p>
+        </header>
+        
+        <main>
+            <div class="video-container">
+                <video id="webcam" autoplay playsinline muted></video>
+                <canvas id="output-canvas"></canvas>
+            </div>
+            
+            <div class="controls">
+                <button id="start-btn">Avvia Webcam</button>
+                <button id="stop-btn" disabled>Ferma</button>
+                <select id="dance-select">
+                    <option value="basic-step">Passo Base</option>
+                    <option value="side-step">Passo Laterale</option>
+                </select>
+            </div>
+            
+            <div class="feedback-panel">
+                <h3>Feedback AI</h3>
+                <div id="score-display">Score: --</div>
+                <div id="corrections-list"></div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
